@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌅 Morning Digest Archive</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+      max-width: 600px; 
+      margin: 40px auto; 
+      padding: 20px; 
+      background: #0d1117; 
+      color: #e6edf3; 
+      line-height: 1.6; 
+    }
+    h1 { 
+      color: #58a6ff; 
+      border-bottom: 1px solid #30363d; 
+      padding-bottom: 15px; 
+      margin-bottom: 30px;
+    }
+    .digest-list { list-style: none; padding: 0; }
+    .digest-list li { 
+      margin: 10px 0; 
+      padding: 15px;
+      background: #161b22;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+    .digest-list a { 
+      color: #58a6ff; 
+      text-decoration: none; 
+      font-weight: 500;
+    }
+    .digest-list a:hover { text-decoration: underline; }
+    .digest-list .date { color: #8b949e; font-size: 0.9em; }
+    .digest-list .summary { color: #c9d1d9; margin-top: 5px; font-size: 0.95em; }
+    .empty { color: #8b949e; font-style: italic; }
+    footer { margin-top: 40px; text-align: center; color: #484f58; font-size: 0.85em; }
+    footer a { color: #58a6ff; }
+  </style>
+</head>
+<body>
+  <h1>🌅 Morning Digest</h1>
+  <p>Daily news intelligence from Bob 🤖</p>
+  
+  <ul class="digest-list" id="digest-list">
+    <!-- Digests will be listed here -->
+  </ul>
+  
+  <p class="empty" id="empty-message">Loading digests...</p>
+
+  <footer>
+    <p>Powered by <a href="https://github.com/joesbobclaw/morning-digest-recipe">morning-digest-recipe</a></p>
+  </footer>
+
+  <script>
+    // Simple static list - updated by Bob when new digests are added
+    const digests = [
+      { date: "2026-02-15", title: "🧠 Joe's Brain - February 15, 2026", summary: "Demo in 3 days. Sam says hello. Open threads and recurring themes mined from your conversations.", file: "2026-02-15-joes-brain.html" },
+    ];
+    
+    const list = document.getElementById('digest-list');
+    const emptyMsg = document.getElementById('empty-message');
+    
+    if (digests.length === 0) {
+      emptyMsg.textContent = 'No digests yet. Check back tomorrow!';
+    } else {
+      emptyMsg.style.display = 'none';
+      digests.forEach(d => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <a href="digests/${d.file}">${d.title}</a>
+          <div class="summary">${d.summary}</div>
+        `;
+        list.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>
