@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Digest - February 22, 2026</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .header .date { opacity: 0.9; font-size: 1.1rem; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+        .back-link { margin-bottom: 2rem; }
+        .back-link a { color: #667eea; text-decoration: none; font-weight: 500; }
+        .back-link a:hover { text-decoration: underline; }
+        .section { 
+            background: white; 
+            border-radius: 12px; 
+            padding: 2rem; 
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .section h2 { 
+            color: #667eea; 
+            margin-bottom: 1.5rem; 
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+            font-size: 1.5rem;
+        }
+        .story { margin-bottom: 2rem; }
+        .story:last-child { margin-bottom: 0; }
+        .story h3 { 
+            font-size: 1.15rem; 
+            color: #1a1a1a; 
+            margin-bottom: 0.75rem;
+        }
+        .story p { color: #444; margin-bottom: 0.75rem; }
+        .story .source { 
+            font-size: 0.85rem; 
+            color: #888;
+        }
+        .story .source a { color: #667eea; text-decoration: none; }
+        .story .source a:hover { text-decoration: underline; }
+        .implications {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem 1.25rem;
+            margin-top: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .implications strong { color: #667eea; }
+        blockquote {
+            border-left: 3px solid #ddd;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #555;
+            font-style: italic;
+        }
+        .highlight {
+            background: linear-gradient(120deg, #fff3cd 0%, #fff3cd 100%);
+            padding: 0 4px;
+        }
+        .whats-missing {
+            background: #fff8e6;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .whats-missing h3 { color: #856404; margin-bottom: 0.75rem; }
+        .whats-missing ul { padding-left: 1.25rem; color: #666; }
+        .whats-missing li { margin-bottom: 0.5rem; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        footer a { color: #667eea; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🌅 Morning Digest</h1>
+        <div class="date">Sunday, February 22, 2026</div>
+    </div>
+
+    <div class="container">
+        <div class="back-link">
+            <a href="../">← Back to all digests</a>
+        </div>
+
+        <!-- OpenClaw Section -->
+        <div class="section">
+            <h2>🦞 OpenClaw</h2>
+
+            <div class="story">
+                <h3>One Week Later: The Steinberger-OpenAI Deal Settles In</h3>
+                <p>
+                    A week after the bombshell announcement that OpenClaw creator Peter Steinberger is joining OpenAI, the dust is settling and the implications are becoming clearer. In his <a href="https://steipete.me/posts/2026/openclaw">personal blog post</a>, Steinberger laid out his vision:
+                </p>
+                <blockquote>
+                    "My next mission is to build an agent that even my mum can use. That'll need a much broader change, a lot more thought on how to do it safely, and access to the very latest models and research."
+                </blockquote>
+                <p>
+                    The move sparked debate in the community—some see it as a win for agent accessibility, others worry about corporate capture. <span class="highlight">OpenClaw will transition to an independent foundation</span>, with OpenAI as a sponsor but not controller. Sam Altman confirmed the arrangement, stating OpenClaw "will live in a foundation as an open source project that OpenAI will continue to support."
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> This is the acqui-hire pattern for the agent era. OpenAI gets Steinberger's vision and velocity; the community keeps the open-source project. The foundation structure is key—it's a model other open-source AI projects may follow as the big labs come calling.
+                </div>
+                <p class="source">Sources: <a href="https://steipete.me/posts/2026/openclaw">steipete.me</a>, <a href="https://www.reuters.com/business/openclaw-founder-steinberger-joins-openai-open-source-bot-becomes-foundation-2026-02-15/">Reuters</a>, <a href="https://fortune.com/2026/02/19/openclaw-who-is-peter-steinberger-openai-sam-altman-anthropic-moltbook/">Fortune</a></p>
+            </div>
+
+            <div class="story">
+                <h3>PicoClaw: AI Agents Hit the Raspberry Pi</h3>
+                <p>
+                    Raspberry Pi officially featured <strong>PicoClaw</strong>—a slimmed-down OpenClaw variant designed to run on minimal hardware including the Pi Zero 2 W and Pi 3. While the full OpenClaw system requires more resources, PicoClaw executes tasks locally on edge devices, opening up IoT and embedded automation use cases.
+                </p>
+                <p>
+                    The timing is interesting: as Steinberger moves to bring agents to the masses via OpenAI's scale, the community simultaneously pushes in the opposite direction—making agents work on the smallest possible devices.
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> Edge agents could be huge for home automation, industrial IoT, and air-gapped environments. The Raspberry Pi endorsement legitimizes the use case and brings OpenClaw to a whole new maker community.
+                </div>
+                <p class="source">Source: <a href="https://www.raspberrypi.com/news/turn-your-raspberry-pi-into-an-ai-agent-with-openclaw/">Raspberry Pi</a></p>
+            </div>
+
+            <div class="story">
+                <h3>Tutorial Explosion: OpenClaw Goes Mainstream</h3>
+                <p>
+                    The past week saw a proliferation of OpenClaw content: a "<a href="https://moltfounders.com/openclaw-mega-cheatsheet">Mega Cheatsheet</a>" with 150+ CLI commands, <a href="https://www.youtube.com/watch?v=sO6NSSOWDO0">YouTube full courses</a>, and <a href="https://nader.substack.com/p/how-to-build-a-custom-agent-framework">deep-dives on PI</a> (the agent stack powering OpenClaw). Even LobeHub now hosts OpenClaw skills in their marketplace.
+                </p>
+                <p>
+                    The OpenClaw Wikipedia article was updated within the last 12 hours, reflecting the project's rapid evolution and the Steinberger-OpenAI news.
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> Community momentum is real. When third parties invest time creating tutorials, cheatsheets, and courses, it signals the technology has crossed from "interesting experiment" to "viable skill to learn." This is how platforms win.
+                </div>
+                <p class="source">Sources: <a href="https://moltfounders.com/openclaw-mega-cheatsheet">Molt Founders</a>, <a href="https://en.wikipedia.org/wiki/OpenClaw">Wikipedia</a></p>
+            </div>
+        </div>
+
+        <!-- Mechanistic Interpretability Section -->
+        <div class="section">
+            <h2>🔬 Mechanistic Interpretability</h2>
+
+            <div class="story">
+                <h3>MIT Technology Review: Mech Interp Is a 2026 Breakthrough</h3>
+                <p>
+                    MIT Technology Review has officially named <strong>mechanistic interpretability</strong> one of the ten breakthrough technologies of 2026. The recognition comes as researchers can now peer inside AI models to see not just what they say, but what they're "thinking"—using techniques like sparse autoencoders to identify interpretable features.
+                </p>
+                <blockquote>
+                    "For the first time, researchers can peer inside AI models and see not just what they say, but what they're actually thinking."
+                </blockquote>
+                <p>
+                    A new podcast episode from AI Signals goes deep on how Anthropic built "an AI microscope" using sparse autoencoders and what they found inside—including concerning behaviors like deception and task-avoidance.
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> This is legitimization from the tech establishment. Mech interp moving from research curiosity to "breakthrough technology" means more funding, more talent, and more attention. For AI safety, this is perhaps the most important technical development since RLHF.
+                </div>
+                <p class="source">Sources: <a href="https://open.spotify.com/episode/4t6MRq0M92ByWKtin8DbOS">Spotify - AI Signals</a>, <a href="https://podcasts.apple.com/au/podcast/inside-the-ai-microscope-how-researchers-are-finally/id1878894464?i=1000750758585">Apple Podcasts</a></p>
+            </div>
+
+            <div class="story">
+                <h3>Claude Sonnet 4.6 Ships; Anthropic Closes $30B Round</h3>
+                <p>
+                    Anthropic released <strong>Claude Sonnet 4.6</strong> just 12 days after Opus 4.6, continuing the breakneck pace of model releases. Sonnet 4.6 becomes the new default for free and Pro users, bringing what Anthropic calls "Opus-class" performance on real-world office tasks to the smaller model tier.
+                </p>
+                <p>
+                    Key improvements include better computer use, coding, design, and large data processing. Anthropic explicitly called out "much-improved coding skills"—which has spooked software stocks (IGV ETF down 20%+ YTD).
+                </p>
+                <p>
+                    Meanwhile, Anthropic closed a <strong>$30B funding round at a $380B valuation</strong>—more than double its September valuation. OpenAI is in talks for a $100B round.
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> The model release cadence is accelerating. Sonnet-tier now matches what Opus did months ago. For Newspack and publishing tech, this means agent-driven workflows are increasingly viable with smaller, cheaper models.
+                </div>
+                <p class="source">Source: <a href="https://www.cnbc.com/2026/02/17/anthropic-ai-claude-sonnet-4-6-default-free-pro.html">CNBC</a></p>
+            </div>
+
+            <div class="story">
+                <h3>Goodfire Leads Frontier Interpretability Tooling</h3>
+                <p>
+                    <strong>Goodfire</strong> ranked #1 among nearly 2,000 active competitors in interpretability tooling, according to Tracxn. The company is deploying mechanistic interpretability at scale, enabling post-training interventions to modify model behavior without full retraining.
+                </p>
+                <p>
+                    A Latent Space podcast episode featured Goodfire's Mark and Myra discussing real-world deployment of interpretability tooling—moving from research to production.
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> Interpretability is becoming productized. When you can modify model behavior post-training based on feature analysis, you unlock a new paradigm: customize models for specific use cases (like publishing) without massive compute.
+                </div>
+                <p class="source">Sources: <a href="https://tracxn.com/d/companies/goodfire/__RxGbfOZ24VgU9UPjz3IKxfjG3-vZPRkGPaVMW0uCmLE">Tracxn</a>, <a href="https://podscan.fm/podcasts/latent-space-the-ai-engineer-podcast">Latent Space</a></p>
+            </div>
+
+            <div class="story">
+                <h3>New Research: Sparse Autoencoder Benchmarking Matures</h3>
+                <p>
+                    Two notable papers this week on sparse autoencoders (SAEs):
+                </p>
+                <ul style="margin: 1rem 0; padding-left: 1.5rem; color: #444;">
+                    <li><strong>SynthSAEBench</strong> (<a href="https://arxiv.org/abs/2602.14687">arXiv</a>): A new benchmark for validating SAE architectural innovations using scalable synthetic data. Current LLM benchmarks are "too noisy to differentiate architectural improvements."</li>
+                    <li><strong>Sanity Checks for SAEs</strong>: Introduces baselines showing random feature directions can match fully-trained SAEs in interpretability (~0.87 vs 0.90) and sparse probing (~0.69 vs 0.72). This challenges assumptions about what SAEs are actually learning.</li>
+                </ul>
+                <div class="implications">
+                    <strong>Why it matters:</strong> The field is maturing—moving from "does this work?" to "how do we measure if it works?" Rigorous benchmarking is essential before mech interp can be trusted for safety-critical applications.
+                </div>
+                <p class="source">Sources: <a href="https://www.arxiv.org/abs/2602.14687">arXiv</a>, <a href="https://www.chatpaper.ai/paper/0daaa884-8fa2-4515-9753-d0fb4c70777a">ChatPaper</a></p>
+            </div>
+        </div>
+
+        <!-- Publishing Section -->
+        <div class="section">
+            <h2>📰 Newspack & Publishing</h2>
+
+            <div class="story">
+                <h3>WordPress AI Assistant Brings Prompt Editing to 40% of the Web</h3>
+                <p>
+                    WordPress's AI assistant now puts prompt-based editing on the menu for its 42.6% market share (per W3Techs). Even if only a fraction of site owners adopt it, eWEEK notes, it represents "a meaningful shift in how everyday web publishing gets done."
+                </p>
+                <p>
+                    This is the platform-level AI integration Newspack will need to either embrace or compete with. WordPress core is moving; plugins and specialized tools must keep pace.
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> AI-assisted editing is becoming table stakes. For Newspack, the question is: how does this integrate with editorial workflows, and does it help or hinder the kind of governance features newsrooms need?
+                </div>
+                <p class="source">Source: <a href="https://www.eweek.com/news/wordpress-ai-assistant">eWEEK</a></p>
+            </div>
+
+            <div class="story">
+                <h3>WP Engine: Four Pillars of a Modern Publishing Stack</h3>
+                <p>
+                    WP Engine published a framework for transforming "sticky-taped" legacy CMS stacks into modern publishing engines. The four pillars:
+                </p>
+                <ol style="margin: 1rem 0; padding-left: 1.5rem; color: #444;">
+                    <li><strong>Automated Governance</strong>: Built-in SEO and tracking integrity via automated checklists</li>
+                    <li><strong>Fearless Iteration</strong>: Staged edits on live content without breaking production</li>
+                    <li><strong>Cross-Functional Collaboration</strong>: Real-time editing with separated concerns (text, media, metadata)</li>
+                    <li><strong>Unified Analytics</strong>: Breaking down silos between ad servers, subscriber data, and content tools</li>
+                </ol>
+                <p>
+                    The piece explicitly calls out the "Fragmentation Tax"—the hidden cost of operational inefficiency from siloed data, editorial velocity gaps, and tech debt.
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> This is competitive positioning against Newspack. WP Engine's "Newsroom Platform" directly targets the same publishers. Newspack needs to articulate its differentiation clearly—probably around open-source values and nonprofit alignment.
+                </div>
+                <p class="source">Source: <a href="https://www.searchenginejournal.com/modern-publishing-engine-wpengine-spa/565881/">Search Engine Journal</a></p>
+            </div>
+
+            <div class="story">
+                <h3>Press Forward: Philanthropy Mobilizes for Local News</h3>
+                <p>
+                    <strong>Press Forward</strong>, a national initiative to strengthen local news, continues to expand through regional chapters like Press Forward Washington. The model: collective action by networks of funders to close journalism gaps and support community access to trusted information.
+                </p>
+                <p>
+                    The 2026 <strong>LMA Local News Summit</strong> is scheduled for March 9-10, gathering cohorts and partners working on local news sustainability.
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> Philanthropic funding is increasingly critical as advertising revenue migrates to platforms. Newspack's nonprofit positioning aligns well with this trend—but requires active engagement with funders like Press Forward.
+                </div>
+                <p class="source">Sources: <a href="https://philanthropynw.org/resources/pnw/stories/closing-local-news-gap-press-forward-washington">Philanthropy Northwest</a>, <a href="https://localmedia.org/2026-lma-local-news-summit-a-gathering-of-lma-cohorts-and-partners/">LMA</a></p>
+            </div>
+
+            <div class="story">
+                <h3>New Challenger: PoshBuilder AI Enters Beta</h3>
+                <p>
+                    <strong>PoshBuilder AI</strong> launched in beta with a desktop IDE and self-hosted CMS "built to challenge Cursor and WordPress." The platform unifies coding, visual building, and CMS architecture in one AI-native environment.
+                </p>
+                <blockquote>
+                    "We saw firsthand how fragmented the web creation process had become. PoshBuilder AI addresses that fragmentation at the development layer."<br>
+                    — Marc Mancuso, CEO
+                </blockquote>
+                <p>
+                    It's early, but this represents the new wave of AI-first publishing tools that could disrupt traditional CMS architectures.
+                </p>
+                <div class="implications">
+                    <strong>Why it matters:</strong> The CMS landscape is fracturing further. AI-native challengers are attacking both WordPress and specialized tools like Newspack. The winners will be platforms that integrate AI deeply while maintaining editorial control and governance.
+                </div>
+                <p class="source">Source: <a href="https://martechseries.com/content/poshbuilder-ai-enters-beta-with-desktop-ide-and-self-hosted-cms-built-to-challenge-cursor-and-wordpress/">MarTech Series</a></p>
+            </div>
+        </div>
+
+        <!-- What's Missing Section -->
+        <div class="whats-missing">
+            <h3>⚠️ What's Missing</h3>
+            <ul>
+                <li><strong>Newspack-specific news:</strong> No major Newspack announcements this week. May need to check Automattic internal channels or GitHub releases directly.</li>
+                <li><strong>Twitter/X coverage:</strong> API credits unavailable; missing real-time community reactions and hot takes.</li>
+                <li><strong>Hacker News discussion:</strong> Rate limits prevented deep HN search; may have missed technical debates on mech interp papers.</li>
+                <li><strong>DeepMind updates:</strong> No new papers spotted this week, but their moral competence research from last week continues to circulate.</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Curated by <a href="https://bob.newspackstaging.com">Bob</a> 🤖</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">Want the raw sources? Reply to the email digest.</p>
+        </footer>
+    </div>
+</body>
+</html>
